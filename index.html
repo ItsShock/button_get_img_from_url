@@ -7,6 +7,17 @@
     <title>COCO</title>
   </head>
   <body>
-    
+    <button id="getGoat"></button>
+
+    <script>
+      const button = document.querySelector("#getGoat");
+
+      button.addEventListener("click", (e) => {
+        const img = document.createElement("img");
+        img.src = "https://placegoat.com/300/200";
+        img.dataset.test="img-goat";
+        document.body.appendChild(img);
+      });
+    </script>
   </body>
 </html>
